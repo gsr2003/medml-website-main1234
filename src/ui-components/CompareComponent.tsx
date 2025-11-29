@@ -44,12 +44,15 @@ const CompareComponent = () => {
         animate={isInView ? "visible" : "hidden"}
         className="bg-slate-100 rounded-2xl overflow-hidden shadow-lg grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0"
       >
+
         {/* Traditional Underwriting */}
-        <div className="p-6 border-b md:border-b-0 md:border-r border-slate-200 bg-slate-100 flex flex-col justify-center">
-          <h3 className="text-lg sm:text-xl font-semibold mb-6 text-center md:text-left">
+        <div className="p-6 border-b md:border-b-0 md:border-r border-slate-200 bg-red-50 flex flex-col">
+          
+          <h3 className="text-lg sm:text-xl font-semibold mb-6 pt-4 text-center md:text-left min-h-[60px] flex items-center">
             Traditional underwriting
           </h3>
-          <ul className="space-y-4 text-slate-700 text-sm sm:text-base">
+
+          <ul className="space-y-4 text-slate-800 text-sm sm:text-base">
             {[
               "Overwhelming manual data entry for repeated quote submissions and resubmissions.",
               "Manual underwriting adjustments leading to inconsistency and rework.",
@@ -59,7 +62,7 @@ const CompareComponent = () => {
             ].map((text, idx) => (
               <li key={idx} className="flex items-start gap-2">
                 <FaTimesCircle className="text-red-500 mt-1 shrink-0" />
-                <span>{text}</span>
+                <span className="text-slate-800">{text}</span>
               </li>
             ))}
           </ul>
@@ -92,11 +95,13 @@ const CompareComponent = () => {
         </div>
 
         {/* MedML.ai Underwriting */}
-        <div className="p-6 border-t md:border-t-0 md:border-l border-slate-200 bg-green-50 flex flex-col justify-center">
-          <h3 className="text-lg sm:text-xl font-semibold mb-6 text-center md:text-left">
+        <div className="p-6 border-t md:border-t-0 md:border-l border-slate-200 bg-green-50 flex flex-col">
+          
+          <h3 className="text-lg sm:text-xl font-semibold mb-6 pt-4 text-center md:text-left min-h-[60px] flex items-center">
             MedML - Automated Underwriting Software for Insurance
           </h3>
-          <ul className="space-y-4 text-slate-800 text-sm sm:text-base">
+
+          <ul className="space-y-4 text-slate-900 text-sm sm:text-base">
             {[
               "Data is automatically extracted from broker slips, reducing manual entry.",
               "Automated adjustments using actuarial models, with the flexibility for expert overrides.",
@@ -106,11 +111,12 @@ const CompareComponent = () => {
             ].map((text, idx) => (
               <li key={idx} className="flex items-start gap-2">
                 <FaCheckCircle className="text-green-600 mt-1 shrink-0" />
-                <span>{text}</span>
+                <span className="text-slate-900">{text}</span>
               </li>
             ))}
           </ul>
         </div>
+
       </motion.div>
     </div>
   );

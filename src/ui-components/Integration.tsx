@@ -63,10 +63,10 @@ export default function Integration() {
             </p>
 
             <ul className="list-disc ml-6 text-base sm:text-lg text-slate-900 leading-relaxed space-y-2">
-              <li>Automatically analyze broker slips, RFQs, and claims data</li>
-              <li>Generate personalized insurance quotations in seconds</li>
-              <li>Make data-driven strategic decisions when required</li>
-              <li>Continuously update pricing and underwriting models with minimal manual input</li>
+              <li>Automatically analyze broker slips, RFQs, and claims data.</li>
+              <li>Generate personalized insurance quotations in seconds.</li>
+              <li>Make data-driven strategic decisions when required.</li>
+              <li>Continuously update pricing and underwriting models with minimal manual input.</li>
             </ul>
           </div>
         </div>
